@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style/index.css">
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="header">
+                <p></i><a id="tel" href="tel:6984055865"><i style="font-size:12px" class="fa">&#xf095;</i>+30 6984 055
+                        865</a><br><a id="tel" href="mailto:ath.tsounakis@gmail.com"><i style="font-size:12px"
+                            class="fa">&#xf0e0;</i>
+                        ath.tsounakis@gmail.com
+                    </a></p>
+            </div>
+            <div class="topnav">
+                <a class="active" href="#home">Αρχική</a>
+                <a href="#news">Νέα</a>
+                <a href="#contact">Επικοινωνία</a>
+                <a href="#about">Περισσότερα</a>
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/lab.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/offshore.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/piraeus.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="centered">
+                <h1>Αθανάσιος Στ. Τσουνάκης</h1>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <footer class="footer-container">
+            <div id="footer-child-about">
+                <p>About</p>
+            </div>
+            <div id="footer-child-social">
+                <p>Social Media:</p>
+                <a id="soc" href="https://www.facebook.com/thanasistsounakis/" class="fa fa-facebook"></a>
+                <a id="soc"
+                    href="https://www.google.com/search?q=Athanasios+Tsounakis&sxsrf=ALiCzsblOEtQOtavSQ-xpmyFX8cvDKmhMA%3A1656319684497&source=hp&ei=xG65YoLnG9mQxc8P7p2ngAI&iflsig=AJiK0e8AAAAAYrl81Nvy4BFy1UQUNQn8HASjP6CrNDoa&ved=0ahUKEwiC2bTTn834AhVZSPEDHe7OCSAQ4dUDCAc&uact=5&oq=Athanasios+Tsounakis&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCwguEIAEEMcBEK8BMgUIABDLATIFCAAQgAQyBQgAEIAEMgYIABAeEBYyCAgAEB4QFhAKMgYIABAeEBYyBggAEB4QFjIICAAQHhAWEAo6BwgjEOoCECc6BggjECcQEzoRCC4QgAQQsQMQgwEQxwEQowI6BAgAEAM6EQguEIAEELEDEIMBEMcBENEDOgsIABCABBCxAxCDAToECAAQQzoECC4QQzoHCC4Q1AIQQzoICAAQgAQQsQM6BwgAEMkDEEM6CAguEIAEENQCOgUILhDLAToHCAAQChDLAToFCC4QgARQJ1idEGDxEGgBcAB4AIABowKIAYQXkgEFMC41LjmYAQCgAQGwAQo&sclient=gws-wiz"
+                    class="fa fa-google"></a>
+                <a id="soc" href="https://www.linkedin.com/in/ath-st-tsounakis/" class="fa fa-linkedin"></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
+        }
+    </script>
+</body>
