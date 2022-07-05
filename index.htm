@@ -2,7 +2,10 @@
 
 <head>
     <link rel="stylesheet" href="style/index.css">
-    <title>test</title>
+    <link rel="stylesheet" href="style/timeline.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="footer.js"></script>
+    <title>Αθανάσιος Τσουνάκης | Μηχανικός</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -10,82 +13,103 @@
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <div class="header">
-                <p></i><a id="tel" href="tel:6984055865"><i style="font-size:12px" class="fa">&#xf095;</i>+30 6984 055
-                        865</a><br><a id="tel" href="mailto:ath.tsounakis@gmail.com"><i style="font-size:12px"
-                            class="fa">&#xf0e0;</i>
-                        ath.tsounakis@gmail.com
-                    </a></p>
-            </div>
             <div class="topnav">
+                <a id="name">
+                    <h1>Αθανάσιος Τσουνάκης</h1>
+                </a>
                 <a class="active" href="#home">Αρχική</a>
                 <a href="#news">Νέα</a>
                 <a href="#contact">Επικοινωνία</a>
                 <a href="#about">Περισσότερα</a>
             </div>
+
         </div>
         <div class="slideshow-container">
-
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="imgs/lab.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <img id="slide" src="imgs/lab.jpg" style="width:100%">
             </div>
-
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="imgs/offshore.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <img id="slide" src="imgs/offshore.jpg" style="width:100%">
             </div>
-
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="imgs/piraeus.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <img id="slide" src="imgs/piraeus.jpg" style="width:100%">
             </div>
             <div class="centered">
-                <h1>Αθανάσιος Στ. Τσουνάκης</h1>
-            </div>
-        </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <footer class="footer-container">
-            <div id="footer-child-about">
-                <p>About</p>
-            </div>
-            <div id="footer-child-social">
-                <p>Social Media:</p>
+                <img id="portrait" src="imgs/portrait-circle.png">
+                <h1>Αθανάσιος Τσουνάκης</h1>
                 <a id="soc" href="https://www.facebook.com/thanasistsounakis/" class="fa fa-facebook"></a>
                 <a id="soc"
                     href="https://www.google.com/search?q=Athanasios+Tsounakis&sxsrf=ALiCzsblOEtQOtavSQ-xpmyFX8cvDKmhMA%3A1656319684497&source=hp&ei=xG65YoLnG9mQxc8P7p2ngAI&iflsig=AJiK0e8AAAAAYrl81Nvy4BFy1UQUNQn8HASjP6CrNDoa&ved=0ahUKEwiC2bTTn834AhVZSPEDHe7OCSAQ4dUDCAc&uact=5&oq=Athanasios+Tsounakis&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyCwguEIAEEMcBEK8BMgUIABDLATIFCAAQgAQyBQgAEIAEMgYIABAeEBYyCAgAEB4QFhAKMgYIABAeEBYyBggAEB4QFjIICAAQHhAWEAo6BwgjEOoCECc6BggjECcQEzoRCC4QgAQQsQMQgwEQxwEQowI6BAgAEAM6EQguEIAEELEDEIMBEMcBENEDOgsIABCABBCxAxCDAToECAAQQzoECC4QQzoHCC4Q1AIQQzoICAAQgAQQsQM6BwgAEMkDEEM6CAguEIAEENQCOgUILhDLAToHCAAQChDLAToFCC4QgARQJ1idEGDxEGgBcAB4AIABowKIAYQXkgEFMC41LjmYAQCgAQGwAQo&sclient=gws-wiz"
                     class="fa fa-google"></a>
                 <a id="soc" href="https://www.linkedin.com/in/ath-st-tsounakis/" class="fa fa-linkedin"></a>
+                <hr class="hrStyle">
+                <p>Είμαι φοιτητής Ηλεκτρολόγος Μηχανικός στο Πανεπιστήμιο Πατρών. Ο τομέας
+                    της μηχανικής που με ενδιαφέρει είναι η παραγωγή, μεταφορά και διανομή της ηλεκτρικής ενέργειας.</p>
+                <p>Γεννήθηκα το 2001 στον Πειραιά, όπου μεγάλωσα και ζω. Κατάγομαι από τη Νάουσα της Πάρου.</p>
             </div>
-        </footer>
-    </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
+        </div>
+        <br>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>2019-2024<img class="emblem" src="imgs/patras.png"></h2>
 
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+                    <p>Προπτυχιακές σπουδές στο Πανεπιστήμιο Πατρών, στην Πολυτεχνική Σχολή και το τμήμα <a
+                            href="http://www.ece.upatras.gr/index.php/el/">Ηλεκτρολόγων
+                            Μηχανικών και Τεχνολογίας Υπολογιστών</a>. Επιλογή κατεύθυνσης «Έξυπνα Δίκτυα με ΑΠΕ -
+                        Υψηλές
+                        Τάσεις».</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2016-2019<img class="emblem" src="imgs/ionideios.png"></h2>
+                    <p>Φοίτηση στο <a href="http://lyk-peir-ionid.att.sch.gr/">Πρότυπο Γενικό Λύκειο της Ιωνιδείου
+                            Σχολής</a> στον Πειραιά και αποφοίτηση με τελικό
+                        βαθμό 19,8.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>2013-2016<img class="emblem" src="imgs/ionideios.png"></h2>
+                    <p>Φοίτηση στο <a href="https://www.ionidios.gr/">Πρότυπο και Πειραματικό Γυμνάσιο της Ιωνιδείου
+                            Σχολής</a> στον Πειραιά. Εισαγωγή με
+                        εξετάσεις στο τέλος του σχολικού έτους 2012-2013.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <p></i><a id="tel" href="tel:6984055865"><i style="font-size:12px" class="fa">&#xf095;</i>+30 6984 055
+                    865</a><br><a id="tel" href="mailto:ath.tsounakis@gmail.com"><i style="font-size:12px"
+                        class="fa">&#xf0e0;</i>
+                    ath.tsounakis@gmail.com
+                </a></p>
+        </div>
+        <div class="foot">
+            <ul id="ulfoot">
+                <li id="lifoot"><a id="tel" href="tel:6984055865">Τηλέφωνο</a></li>
+                <li id="lifoot"><a id="tel" href="mailto:ath.tsounakis@gmail.com">E-mail</a></li>
+                <li id="lifoot"><a id="linkfoot" href="https://dribbble.com/julesforrest">Github</a></li </ul>
+        </div>
+        <p id="footnote">Η ιστοσελίδα δημιουργήθηκε το 2022.</p>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 9000);
             }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 10000); // Change image every 2 seconds
-        }
-    </script>
+        </script>
 </body>
