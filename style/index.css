@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
 
+html {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
 #test p {
     margin-top: 25px;
     font-size: 21px;
@@ -68,18 +74,17 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #54b3d6;
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #f2f2f2;
+    float: right;
+    color: #c7c7c7;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 /* Change the color of links on hover */
@@ -92,6 +97,15 @@
 .topnav a.active {
     background-color: black;
     color: white;
+}
+
+#name {
+    float: left;
+    color: #4d7583;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 #page-container {
@@ -118,7 +132,7 @@
 
 #tel {
     box-shadow: inset 0 0 0 0 black;
-    color: black;
+    color: white;
     padding: 0 .25rem;
     margin: 0 -.25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -132,10 +146,6 @@
 
 a {
     color: black;
-    font-family: "Helvetica";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
     text-decoration: none;
 }
 
@@ -346,16 +356,25 @@ body {
     display: none;
 }
 
-img {
+#slide {
     vertical-align: middle;
-    opacity: 0.5;
+    opacity: 0.75;
+    filter: brightness(50%);
+}
+
+#portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    width: 100%;
+    width: 70%;
     position: relative;
     margin: auto;
+    box-shadow: 0 0 8px 8px white inset;
 }
 
 /* Caption text */
@@ -422,4 +441,56 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    float: center;
+    text-align: center;
+}
+
+.nav-link {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: inherit;
+    opacity: 0.8;
+}
+
+.header-social .nav-link {
+    font-size: 1.25rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: inherit;
+    opacity: 1;
+}
+
+.nav-item+.nav-item {
+    margin-left: 1rem;
+}
+
+hr.hrStyle {
+    border: 1px solid white;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(166, 186, 230);
+}
+
+#left_footer {
+    float: left;
+    text-align: left;
+}
+
+#right_footer {
+    float: right;
+    text-align: left;
+}
+
+#leftandright {
+    width: 65%;
+}
+
+.emblem {
+    float: right;
+    width: 50px;
 }
