@@ -4,6 +4,12 @@
     margin: 0 auto;
 }
 
+.cv {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
